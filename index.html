@@ -8,7 +8,7 @@
     <title>Piotr Bocian</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="main-content">
         <div class="title">
             <h1>Piotr Bocian</h1>
             <ul class="socials">
@@ -31,14 +31,40 @@
         </div>
         <nav>
             <ul class="links">
-                <li>Projects</li>
-                <li>About Me</li>
-                <li>Contact</li>
+                <li onclick="toggleProjects();">Projects</li>
+                <li onclick="toggleAbout();">About Me</li>
+                <li onclick="toggleContact();">Contact</li>
             </ul>
         </nav>    
     </div>
 
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to contact me on my social medias or simply fill the form below</p>
+        <form action="">
+            <label>E-mail</label>
+            <input type="text" name="E-mail" id="email">
+            <label>Message</label>
+            <textarea rows="5"></textarea>
+            <button>Send</button>
+            
+        </form>
+       
+    </div>
+
+    <div id="about-me">
+        <h2>About Me</h2>
+        <p></p>
+    </div>
    
+    <div id="projects">
+        <h2>Projects</h2>
+        <div class="line"></div>
+        <div class="gallery"></div>
+        <button onclick="slideOut();">Go back</button>
+    </div>
+
+
 </body>
 <script src="index.js"></script>
 </html>
