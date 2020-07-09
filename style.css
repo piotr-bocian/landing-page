@@ -5,7 +5,7 @@ html *{
 
 body{
    
-    background: rgba(0,0,0,.55) url('/assets/background.jpg');
+    background: rgba(0,0,0,.55) url('background.png');
     background-blend-mode: darken;
     background-size: cover;
     background-position-x: 50%;
