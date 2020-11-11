@@ -5,7 +5,7 @@ html *{
 
 body{
    
-    background: rgba(0,0,0,.55) url('background.png');
+    background: url('./assets/background.jpg');
     background-blend-mode: darken;
     background-size: cover;
     background-position-x: 50%;
@@ -62,6 +62,14 @@ li:hover{
     text-decoration: underline;
 }
 
+#speaker{
+    display: block;
+    right: 0;
+    top: 0;
+    margin-top: 14px;
+    margin-right: 22px;
+    position: absolute;
+}
 .socials{
     display: flex;
     align-items: flex-end;
@@ -95,8 +103,19 @@ li:hover{
     height: 1px;
 }
 
+#speaker{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
 .socials>li{
-    transition: ease-in-out .5s;
+    transition: ease-in-out .3s;
 }
 
 .socials>li:hover{
@@ -144,6 +163,18 @@ li:hover{
    
 }
 
+.cv{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
 .slide-out{
     animation: slide-out 2s both;
 }
@@ -171,6 +202,7 @@ li:hover{
     align-items: center;
     border: 1px solid white;
     height: 80%;
+    width: auto;
 }
 
 .image{
@@ -192,6 +224,7 @@ li:hover{
     display: flex;
     justify-content: space-evenly;
     margin-top: 2%;
+    margin-bottom: 4%;
     width: 100%;
 }
 

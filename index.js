@@ -25,13 +25,25 @@ const toggleProjects = () => {
 
 const slideOut = () => {
     document.getElementById('projects').style.animation="";
-    document.getElementById('projects').style.animation="slide-out 2s both";
+    document.getElementById('projects').style.animation="slide-out 1s both";
     setTimeout(() => {
         document.getElementById('projects').style.display="";
-        document.getElementById('projects').style.animation="slide-in-projects 2s";
+        document.getElementById('projects').style.animation="slide-in-projects 1s";
     
     },
-    2000);
+    1000);
     
    
 }
+
+const offSound = () => {
+    if(document.getElementById("ambient").paused){
+        document.getElementById('speaker').src="./assets/volume-line.svg";
+        document.getElementById("ambient").play();
+  
+    }
+    else{
+        document.getElementById('speaker').src="./assets/silent-line.svg";
+        document.getElementById("ambient").pause();
+    }
+};
